@@ -1,0 +1,9 @@
+
+@layer components{
+    .NavMenu{
+        @apply flex items-center gap-4 hover:cursor-pointer hover:text-neutral-400 text-base
+      }
+      .Active{
+        @apply text-neutral-400
+      }
+}

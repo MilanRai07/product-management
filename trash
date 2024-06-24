@@ -1,0 +1,17 @@
+@layer components{
+  .AllFont{
+    @apply font-mono
+  }
+  .FlexCenter{
+    @apply flex justify-center items-center
+  }
+  .FlexBetween{
+    @apply flex flex-col justify-between
+  }
+  .NavMenu{
+    @apply flex items-center gap-4 hover:cursor-pointer hover:text-neutral-400 text-base
+  }
+  .Active{
+    @apply text-neutral-400
+  }
+}

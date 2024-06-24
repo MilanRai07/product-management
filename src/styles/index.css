@@ -1,0 +1,17 @@
+@import './typography/navbarFonts.css';
+@import './layouts/flex.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* global style custom */
+@layer base{
+  body{
+    /* font-family:font-mono */
+  }
+}
+
+
+ 
