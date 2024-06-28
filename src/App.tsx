@@ -9,7 +9,7 @@ function App() {
 
       <div className="flex">
         <NavBar />
-        <div className="w-full p-14">
+        <div className="w-full p-12">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>

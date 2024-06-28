@@ -5,7 +5,7 @@
             "title": "Iphone 13 Pro Max",
             "price": 140000,
             "description": "The iPhone 13 Pro Max, released by Apple in September 2021, is part of the iPhone 13 series and represents the pinnacle of Apple's smartphone technology at the time of its release. Here's a detailed description of the device",
-            "Image": "../assets/images/iphone13.jpg",
+            "image": "/assets/images/iphone13.jpg",
             "category": "phone"
         },
         {
@@ -13,7 +13,7 @@
             "title": "samsung s23 ultra",
             "price": 120000,
             "description": "The samsung s23 ultra, released by Samsung in September 2021, is part of the S series and represents the pinnacle of smartphone technology at the time of its release. Here's a detailed description of the device",
-            "Image": "../assets/images/s23ultra.jpg",
+            "image": "/assets/images/s23ultra.jpg",
             "category": "phone"
         },
         {
@@ -21,7 +21,7 @@
             "title": "Iphone x",
             "price": 140000,
             "description": "The iPhone 13 Pro Max, released by Apple in September 2021, is part of the iPhone 13 series and represents the pinnacle of Apple's smartphone technology at the time of its release. Here's a detailed description of the device",
-            "Image": "../assets/images/iphonex.webp",
+            "image": "/assets/images/iphonex.webp",
             "category": "phone"
         },
         {
@@ -29,7 +29,7 @@
             "title": "RedMi Note 10",
             "price": 140000,
             "description": "The iPhone 13 Pro Max, released by Apple in September 2021, is part of the iPhone 13 series and represents the pinnacle of Apple's smartphone technology at the time of its release. Here's a detailed description of the device",
-            "Image": "../assets/images/redminote10.png",
+            "image": "/assets/images/redminote10.png",
             "category": "phone"
         }
     ]

@@ -1,0 +1,5 @@
+@layer components{
+    .background{
+        @apply bg-[#282828]
+    }
+}

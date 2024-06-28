@@ -1,5 +1,7 @@
 @import './typography/navbarFonts.css';
 @import './layouts/flex.css';
+@import './components/overlay.css';
+@import './utilities/colors.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

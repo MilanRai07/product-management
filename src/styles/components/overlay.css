@@ -1,0 +1,6 @@
+@layer components{
+    .overlay{
+        @apply h-full rounded-md duration-1000 ease-in-out w-full text-white 
+        bg-[rgba(0,0,0,0.7)] absolute bottom-[-100%] left-0 right-0 FlexCenter text-center group-hover:bottom-0
+    }
+}

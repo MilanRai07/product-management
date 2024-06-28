@@ -3,9 +3,7 @@ export interface product {
     title: string,
     price: number,
     description: number,
-    Image: string,
+    image: string,
     category: string
 }
-export interface allProducts {
-    products: product[];
-}
+export type allProducts = product[];

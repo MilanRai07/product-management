@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <>
             <nav>
-                <div className="FlexBetween bg-zinc-900 text-white h-screen p-12 w-72 ">
+                <div className="FlexBetween flex-col bg-zinc-900 text-white h-screen p-12 w-72 ">
                     <h1 className="text-center text-3xl font-bold">Technology Inc</h1>
                     <ul className="flex flex-col gap-8 font-bold text-xl">
                         {

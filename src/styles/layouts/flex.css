@@ -3,6 +3,6 @@
         @apply flex justify-center items-center
       }
       .FlexBetween{
-        @apply flex flex-col justify-between
+        @apply flex justify-between
       }
 }
