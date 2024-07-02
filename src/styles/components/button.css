@@ -1,0 +1,9 @@
+@layer components{
+    .CustomButton {
+        @apply py-2.5 px-4 border bg-cyan-600 text-white rounded text-sm leading-6 font-bold hover:bg-cyan-700
+    }
+
+    .Button{
+        @apply h-11 w-[135px] CustomButton
+    }
+}

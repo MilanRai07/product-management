@@ -1,19 +1,24 @@
+import { useEffect } from "react";
 import { useGetProductsQuery } from "../api/ProductApi"
 import ProductImage from "../components/ProductImage";
 import { product } from "../type/product";
 
 const Home = () => {
-  const { data, isLoading } = useGetProductsQuery();
+  const { data, isLoading, refetch } = useGetProductsQuery();
+
+  useEffect(() => {
+    refetch()
+  }, [data])
 
   return (
     <>
-      <section className="">
-        <h1 className="text-center text-3xl font-bold mb-14">Home</h1>
+      <section>
+        <h1 className="PageHeader">Home</h1>
         {
           isLoading ?
             <h1>Loading....</h1>
             :
-            <div className="FlexBetween">
+            <div className="Grid">
               {
                 data?.map((item: product) => {
                   const { id, title, price, description, image, category } = item;

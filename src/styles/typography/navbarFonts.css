@@ -6,4 +6,7 @@
       .Active{
         @apply text-neutral-400
       }
+      .PageHeader{
+        @apply text-center text-3xl font-bold mb-14
+      }
 }

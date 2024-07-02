@@ -1,0 +1,14 @@
+@layer components{
+    .Form{
+        @apply flex flex-col items-center w-full h-[415px] justify-between
+    }
+    .ImageLabel{
+        @apply w-44 text-sm p-1 text-center rounded-sm bg-cyan-700 cursor-pointer mx-auto text-white hover:bg-cyan-600
+    }
+    .Error{
+        @apply mb-1 h-3 text-sm text-red-900
+    }
+    .ImageContainer{
+        @apply h-28 w-24 border-2 border-cyan-500 mb-4 overflow-hidden
+    }
+}

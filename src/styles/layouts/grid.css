@@ -1,0 +1,5 @@
+@layer components{
+    .Grid{
+        @apply grid grid-cols-4 gap-3 gap-y-6
+    }
+}

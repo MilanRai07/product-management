@@ -1,6 +1,9 @@
 @import './typography/navbarFonts.css';
 @import './layouts/flex.css';
+@import './layouts/grid.css';
 @import './components/overlay.css';
+@import './components/form.css';
+@import './components/button.css';
 @import './utilities/colors.css';
 @tailwind base;
 @tailwind components;
@@ -12,6 +15,15 @@
 @layer base{
   body{
     /* font-family:font-mono */
+  }
+  .FieldFocus {
+    @apply focus:outline-none border focus:border-sky-500 focus:ring-1
+}
+  input{
+    @apply h-10 w-[300px] p-3 rounded-md border-2 border-cyan-500 outline-none text-base FieldFocus
+  }
+  textarea{
+    @apply h-44 w-[625px] p-3 rounded-md border-2 border-cyan-500 outline-none text-base resize-none FieldFocus
   }
 }
 

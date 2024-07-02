@@ -5,7 +5,7 @@ const ProductImage = (props: product) => {
 
     return (
         <>
-            <div className='group h-48 rounded-md w-56 overflow-hidden relative cursor-pointer shadow-2xl'>
+            <div className='group h-48 rounded-md w-56 overflow-hidden relative cursor-pointer border border-cyan-900'>
                 <img src={image} alt={title}></img>
                 <div className="overlay">
                     <div>
