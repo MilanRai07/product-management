@@ -1,3 +1,4 @@
 ## install tailwindcss,
 
-## install json-server for database running at local host 3000
+## install express,cors,body-parser,multer,path,fs,nodemon
+

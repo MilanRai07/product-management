@@ -4,6 +4,7 @@ export interface product {
     price: number | null,
     description: string,
     image: any,
-    category: string
+    category: string,
+    date:string
 }
 export type allProducts = product[];

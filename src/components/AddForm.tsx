@@ -8,13 +8,16 @@ const AddForm = () => {
   const [addProducts] = useAddProductMutation();
   const [imagePreview, setImagePreview] = useState<string | null>(null);
 
+  const categories: string[] = ['mobile', 'laptops', 'others']
+
   const initialValues: product = {
     id: null,
     title: '',
     price: null,
     description: '',
     image: '',
-    category: ''
+    category: '',
+    date:''
   }
   const validate = (values: product): FormikErrors<product> => {
     let error: FormikErrors<product> = {};
@@ -24,15 +27,21 @@ const AddForm = () => {
     return error;
   }
   const onSubmit = async (values: product, onSubmitProps: any) => {
+    //for random id
     const randomId: any = uuid();
     const numberId = parseInt(randomId.replace(/[^0-9]/g, ''), 10);
-    const productData = new FormData();
 
+    //for dates
+    const today=new Date();
+    const date=`${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`
+
+    const productData = new FormData();
     productData.append('id', numberId.toString());
     productData.append('title', values.title);
     productData.append('price', values.price?.toString() || '');
     productData.append('description', values.description);
     productData.append('category', values.category);
+    productData.append('date',date.toString())
     if (values.image) {
       productData.append('image', values.image);
     }
@@ -86,7 +95,26 @@ const AddForm = () => {
               name='price'
               onChange={formik.handleChange}
               value={formik.values.price ?? ''}>
-            </input>
+            </input><br></br>
+            <div className="text-center mt-3">
+              {
+                categories.map((item: string) => {
+                  return (
+                    <label key={item} className="mr-4 text-sm font-semibold">
+                      <input
+                        type="radio"
+                        className="radio"
+                        name="category"
+                        value={item}
+                        onChange={formik.handleChange}
+                        checked={formik.values.category === item}
+                      />
+                      {item}
+                    </label>
+                  )
+                })
+              }
+            </div>
           </div>
         </div>
         <textarea

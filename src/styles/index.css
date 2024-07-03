@@ -22,6 +22,9 @@
   input{
     @apply h-10 w-[300px] p-3 rounded-md border-2 border-cyan-500 outline-none text-base FieldFocus
   }
+  .radio{
+    @apply h-3 w-3 mr-1
+  }
   textarea{
     @apply h-44 w-[625px] p-3 rounded-md border-2 border-cyan-500 outline-none text-base resize-none FieldFocus
   }

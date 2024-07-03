@@ -13,6 +13,6 @@ export const navList: navitem[] = [
   { 'name': 'Manage Products', 'icon': <MdManageHistory />, 'link': '/manage-products' },
   { 'name': 'Mobiles', 'icon': <MdOutlinePhoneIphone />, 'link': '/mobiles' },
   { 'name': 'Laptops', 'icon': <FaLaptop />, 'link': '/laptops' },
-  { 'name': 'Computer Parts', 'icon': <IoSettings />, 'link': '/computer-parts' },
+  { 'name': 'Others', 'icon': <IoSettings />, 'link': '/others' },
   { 'name': 'Analytics', 'icon': <SiGoogleanalytics />, 'link': '/analytics' },
 ]
