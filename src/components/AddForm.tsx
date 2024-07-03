@@ -7,6 +7,7 @@ import { useAddProductMutation } from "../api/ProductApi";
 const AddForm = () => {
   const [addProducts] = useAddProductMutation();
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
 
   const categories: string[] = ['mobile', 'laptops', 'others']
 
@@ -17,7 +18,7 @@ const AddForm = () => {
     description: '',
     image: '',
     category: '',
-    date:''
+    date: ''
   }
   const validate = (values: product): FormikErrors<product> => {
     let error: FormikErrors<product> = {};
@@ -26,14 +27,14 @@ const AddForm = () => {
     }
     return error;
   }
-  const onSubmit = async (values: product, onSubmitProps: any) => {
+  const onSubmit = (values: product, onSubmitProps: any) => {
     //for random id
     const randomId: any = uuid();
     const numberId = parseInt(randomId.replace(/[^0-9]/g, ''), 10);
 
     //for dates
-    const today=new Date();
-    const date=`${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`
+    const today = new Date();
+    const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`
 
     const productData = new FormData();
     productData.append('id', numberId.toString());
@@ -41,15 +42,21 @@ const AddForm = () => {
     productData.append('price', values.price?.toString() || '');
     productData.append('description', values.description);
     productData.append('category', values.category);
-    productData.append('date',date.toString())
+    productData.append('date', date.toString())
     if (values.image) {
       productData.append('image', values.image);
     }
-
-    await addProducts(productData);
-    setImagePreview(null);
-    onSubmitProps.setSubmitting(false);
-    onSubmitProps.resetForm();
+    else {
+      productData.append('image', '/images/img.png')
+    }
+    setIsSubmitting(true)
+    setTimeout(() => {
+      addProducts(productData);
+      setImagePreview(null);
+      onSubmitProps.setSubmitting(false);
+      onSubmitProps.resetForm();
+      setIsSubmitting(false)
+    }, 2000)
   }
   const formik = useFormik<product>({
     initialValues,
@@ -125,7 +132,7 @@ const AddForm = () => {
         </textarea>
         <button type='submit' className="Button" disabled={!formik.isValid || formik.isSubmitting}>
           {
-            formik.isSubmitting ? 'Adding...' : 'Add'
+            isSubmitting ? 'Adding...' : 'Add'
           }
         </button>
       </form>

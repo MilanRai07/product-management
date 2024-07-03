@@ -3,9 +3,12 @@ import { allProducts, product } from "../type/product";
 
 export const ProductAPI = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: '/api' }),
+    tagTypes: ['products'],
     endpoints: (builder) => ({
         getProducts: builder.query<allProducts, void>({
             query: () => '/products',
+            providesTags: ['products']
+
         }),
         addProduct: builder.mutation<product, FormData>({
             query: (formData) => ({
@@ -13,6 +16,7 @@ export const ProductAPI = createApi({
                 method: 'POST',
                 body: formData,
             }),
+            invalidatesTags: ['products']
         }),
         updateProduct: builder.mutation({
             query: ({ id, ...product }) => ({
@@ -26,7 +30,8 @@ export const ProductAPI = createApi({
                 url: `products/${id}`,
                 method: 'DELETE',
             }),
+            invalidatesTags: ['products']
         }),
     }),
 })
-export const { useGetProductsQuery, useAddProductMutation } = ProductAPI;
+export const { useGetProductsQuery, useAddProductMutation, useDeleteProductMutation } = ProductAPI;

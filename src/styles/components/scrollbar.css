@@ -1,0 +1,5 @@
+@layer components{
+    .Scrollbar{
+      @apply overflow-y-scroll scrollbar-thin scrollbar-thumb-sky-400 scrollbar-track-cyan-700
+    }
+}

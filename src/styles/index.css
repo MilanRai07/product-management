@@ -1,9 +1,11 @@
 @import './typography/navbarFonts.css';
 @import './layouts/flex.css';
 @import './layouts/grid.css';
+@import './layouts/sizes.css';
 @import './components/overlay.css';
 @import './components/form.css';
 @import './components/button.css';
+@import './components/scrollbar.css';
 @import './utilities/colors.css';
 @tailwind base;
 @tailwind components;

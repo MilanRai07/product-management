@@ -1,0 +1,8 @@
+@layer components{
+    .ProductHeading{
+        @apply w-36 text-center
+    }
+    .ProductDetail{
+        @apply w-36 text-center font-semibold
+    }
+}
