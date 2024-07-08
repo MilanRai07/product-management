@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
 // Configure multer to store uploaded files in 'public/images' directory
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, path.join('../public/images'));
+        cb(null, path.join(__dirname, '../public/images'));
     },
     filename: function (req, file, cb) {
         cb(null, Date.now() + '-' + file.originalname);
@@ -83,16 +83,31 @@ app.put('/products/:id', upload.single('image'), (req, res) => {
 });
 
 // Delete a product
+// Delete a product
 app.delete('/products/:id', (req, res) => {
     const data = readData();
     const productId = req.params.id;
-    const newProducts = data.products.filter(p => p.id !== productId);
+    const productIndex = data.products.findIndex(p => p.id === productId);
 
-    if (newProducts.length === data.products.length) {
+    if (productIndex === -1) {
         return res.status(404).json({ message: 'Product not found' });
     }
 
-    data.products = newProducts;
+    const [product] = data.products.splice(productIndex, 1); // Remove the product and get the product
+
+    // Check if the product has an associated image
+    if (product.image) {
+        const imagePath = path.join(__dirname, '../public', product.image);
+        fs.unlink(imagePath, (err) => {
+            if (err) {
+                console.error('Failed to delete image file:', err);
+            } else {
+                console.log('Image file deleted successfully');
+            }
+        });
+    }
+
+    // Write the updated data back to the file
     writeData(data);
     res.status(204).send();
 });
