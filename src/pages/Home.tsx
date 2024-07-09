@@ -2,10 +2,23 @@ import { useGetProductsQuery } from "../api/ProductApi"
 import ProductImage from "../components/ProductImage";
 import { product } from "../type/product";
 import { useRefetch } from "../customhook/useRefetch";
+import ReactPaginate from 'react-paginate';
+import { useState } from "react";
 
+const ITEMS_PER_PAGE = 8;
 const Home = () => {
+  const [currentPage, setCurrentPage] = useState(0);
   const { data, isLoading } = useGetProductsQuery();
+  const pageCount = Math.ceil((data?.length ?? 0) / ITEMS_PER_PAGE)
   useRefetch();
+
+  const handlePageClick = (selectedItem: { selected: number }) => {
+    setCurrentPage(selectedItem.selected);
+  };
+
+  const offset = currentPage * ITEMS_PER_PAGE;
+  const currentPageData = data?.slice(offset, offset + ITEMS_PER_PAGE);
+
   return (
     <>
       <section>
@@ -16,7 +29,7 @@ const Home = () => {
             :
             <div className="Grid">
               {
-                data?.map((item: product) => {
+                currentPageData?.map((item: product) => {
                   const { id, title, price, description, image, category, date } = item;
                   return (
                     <div key={id}>
@@ -35,6 +48,20 @@ const Home = () => {
               }
             </div>
         }
+        <div className="FlexCenter">
+          <ReactPaginate
+            previousLabel={'Prev'}
+            nextLabel={'Next'}
+            breakLabel={'...'}
+            breakClassName={'break-me'}
+            pageCount={pageCount}
+            marginPagesDisplayed={2}
+            pageRangeDisplayed={2}
+            onPageChange={handlePageClick}
+            containerClassName={'flex mt-12 gap-7 font-bold'}
+            activeClassName={'text-cyan-700'}
+          />
+        </div>
       </section>
     </>
   )
