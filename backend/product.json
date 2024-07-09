@@ -35,6 +35,249 @@
       "image": "/images/redminote10.png",
       "category": "mobile",
       "date": "2024-7-3"
+    },
+    {
+      "id": "2926027746555338",
+      "title": "Msi-gf63",
+      "price": "98000",
+      "description": "Msi-Gf63 is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720502114649-msiGF63.jpg"
+    },
+    {
+      "id": "16892084823882031000",
+      "title": "Nvidia RTX 4070",
+      "price": "50000",
+      "description": "Get equipped for supercharged gaming and creating with NVIDIA® GeForce RTX™ 4070 Ti SUPER, RTX 4070 SUPER, RTX 4070 Ti, and RTX 4070 graphics cards. They’re built with the ultra-efficient NVIDIA Ada Lovelace architecture. Experience super fast ray tracing, AI-accelerated performance with DLSS 3, new ways to create, and much more.",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720502323711-rtx4070ti.jpg"
+    },
+    {
+      "id": "81772004148863900",
+      "title": "Biagji Mouse",
+      "price": "12000",
+      "description": "Racing X8S Wired USB Gaming Mouse with 3200 DPI Optical Sensor. It has RGB Lighting and has 7 Buttons. It is made with Ergonomic Design. and very Lightweight.",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720502631961-biagji.jpg"
+    },
+    {
+      "id": "833536543278929700000",
+      "title": "Acer Predator Helios",
+      "price": "300000",
+      "description": "Acer Predator Helios is 11th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720503304076-acerpredatorhelois.jpg"
+    },
+    {
+      "id": "722561408905980000",
+      "title": "Motorola g84",
+      "price": "56000",
+      "description": "",
+      "category": "mobile",
+      "date": "2024-7-9",
+      "image": "/images/1720503349380-motorolag84.jpg"
+    },
+    {
+      "id": "2.801054412420271e+23",
+      "title": "Zebronic zets",
+      "price": "4000",
+      "description": "Bluetooth version is BT v5.1. It has AUX Function with Soft & Comfortable Cushions. The headband is Adjustable with Media/Volume control functionality,  Call Function, Built-in Rechargeable Battery, Voice assistant support. Type C charging",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720503577035-zebronicsjetpro.jpg"
+    },
+    {
+      "id": "197850644814956640",
+      "title": "Saphynx Graphics",
+      "price": "45000",
+      "description": "",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720503692222-sanpylrx580.jpg"
+    },
+    {
+      "id": "336837764277801900000",
+      "title": "K65-mini keyboard",
+      "price": "7000",
+      "description": "It has feature of 19 keys anti-ghosting, multiple keys without conflict and Rainbow backlit with adjustable brightness with waterproof design protects from accidentally spills. There are 12 Fn shortcut buttons for multimedia, internet, etc. It is Compatible with Windows XP/Vista/7/8/10, Mac OS and many more.",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720503880955-k65mini.jpg"
+    },
+    {
+      "id": "207064473471806050",
+      "title": "LG gf6 phone",
+      "price": "57000",
+      "description": "It has feature of 19 keys anti-ghosting, multiple keys without conflict and Rainbow backlit with adjustable brightness with waterproof design protects from accidentally spills. There are 12 Fn shortcut buttons for multimedia, internet, etc. It is Compatible with Windows XP/Vista/7/8/10, Mac OS and many more.",
+      "category": "mobile",
+      "date": "2024-7-9",
+      "image": "/images/1720509565751-lg-g6.jpg"
+    },
+    {
+      "id": "90142294444785",
+      "title": "Vivo Phone",
+      "price": "35000",
+      "description": "It has feature of 19 keys anti-ghosting, multiple keys without conflict and Rainbow backlit with adjustable brightness with waterproof design protects from accidentally spills. There are 12 Fn shortcut buttons for multimedia, internet, etc. It is Compatible with Windows XP/Vista/7/8/10, Mac OS and many more.",
+      "category": "mobile",
+      "date": "2024-7-9",
+      "image": "/images/1720509616905-vivov25.jpg"
+    },
+    {
+      "id": "433944444715287800000",
+      "title": "HK Gaming Keybord",
+      "price": "5000",
+      "description": "It has feature of 19 keys anti-ghosting, multiple keys without conflict and Rainbow backlit with adjustable brightness with waterproof design protects from accidentally spills. There are 12 Fn shortcut buttons for multimedia, internet, etc. It is Compatible with Windows XP/Vista/7/8/10, Mac OS and many more.\r\n",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720509683812-hkgaminggk61.jpg"
+    },
+    {
+      "id": "28729886141054920000",
+      "title": "Logitech Mouse",
+      "price": "7000",
+      "description": "Racing X8S Wired USB Gaming Mouse with 3200 DPI Optical Sensor. It has RGB Lighting and has 7 Buttons. It is made with Ergonomic Design. and very Lightweight.",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720509769801-logitech.jpg"
+    },
+    {
+      "id": "4.207106144189933e+22",
+      "title": "Red dragon mouse",
+      "price": "9000",
+      "description": "Racing X8S Wired USB Gaming Mouse with 3200 DPI Optical Sensor. It has RGB Lighting and has 7 Buttons. It is made with Ergonomic Design. and very Lightweight.",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720509797253-reddragon.jpg"
+    },
+    {
+      "id": "5.561395554438951e+21",
+      "title": "Mac book air 13",
+      "price": "170000",
+      "description": "Mac book air 13 is produced by apple which is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720509953831-macbookair13.jpg"
+    },
+    {
+      "id": "9.610396149582953e+21",
+      "title": "Acer Predator 2",
+      "price": "120000",
+      "description": "Acer Predator 2 is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720510017490-acerpredator21.jpg"
+    },
+    {
+      "id": "323447067046339000000",
+      "title": "Mac book M2",
+      "price": "220000",
+      "description": "MacBook M2 is produced by apple which is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720510066631-macm2.jpg"
+    },
+    {
+      "id": "8141371437761880",
+      "title": "Mac Book M3",
+      "price": "300000",
+      "description": "Mac book M3 is produced by apple which is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720510106026-mcpro14.jpg"
+    },
+    {
+      "id": "4.75811004268086e+22",
+      "title": "HP Laptop",
+      "price": "63000",
+      "description": "HP is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720510518301-jp17t-cb400.jpg"
+    },
+    {
+      "id": "1.2232795408027835e+21",
+      "title": "HP Notebook 14",
+      "price": "76000",
+      "description": "HP Notebook 14 is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720510552008-hpnotebook14.jpg"
+    },
+    {
+      "id": "941617467428525300",
+      "title": "Lenovo Thinkpad 14",
+      "price": "78000",
+      "description": "Linovo ThinkPad 14 is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720510588129-lenovo thinkpad14.jpg"
+    },
+    {
+      "id": "89709241128957600",
+      "title": "Lenovo Laptop",
+      "price": "45000",
+      "description": "Lenovo Laptop is 10th Generation Intel Core i5-10300H laptop with display 15.6-inch Full-HD (1920 x 1080 pixels), IPS-Level Narrow Bezel. 2Chipset is Intel HM470. GeForce GTX 1650 MAX-Q with 4GB GDDR5 VRAM Graphics. Memory is 8GB DDR4, 2666MHz. with 512GB SSD.",
+      "category": "laptops",
+      "date": "2024-7-9",
+      "image": "/images/1720510619722-lenovoloq2024.jpg"
+    },
+    {
+      "id": "3338847299013827",
+      "title": "Havith Headphone",
+      "price": "12000",
+      "description": "Bluetooth version is BT v5.1. It has AUX Function with Soft & Comfortable Cushions. The headband is Adjustable with Media/Volume control functionality,  Call Function, Built-in Rechargeable Battery, Voice assistant support. Type C charging",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720510670357-havith2035u.jpg"
+    },
+    {
+      "id": "92761646680248750000",
+      "title": "Onikumax Headphone",
+      "price": "9000",
+      "description": "Bluetooth version is BT v5.1. It has AUX Function with Soft & Comfortable Cushions. The headband is Adjustable with Media/Volume control functionality,  Call Function, Built-in Rechargeable Battery, Voice assistant support. Type C charging",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720510696120-onikumax11.jpg"
+    },
+    {
+      "id": "355202949422938000000",
+      "title": "Bengo G-900",
+      "price": "14000",
+      "description": "Bluetooth version is BT v5.1. It has AUX Function with Soft & Comfortable Cushions. The headband is Adjustable with Media/Volume control functionality,  Call Function, Built-in Rechargeable Battery, Voice assistant support. Type C charging",
+      "category": "others",
+      "date": "2024-7-9",
+      "image": "/images/1720510718570-bengooG900.jpg"
+    },
+    {
+      "id": "27085854917045304",
+      "title": "Poco mobile",
+      "price": "35000",
+      "description": "Bluetooth version is BT v5.1. It has AUX Function with Soft & Comfortable Cushions. The headband is Adjustable with Media/Volume control functionality,  Call Function, Built-in Rechargeable Battery, Voice assistant support. Type C charging",
+      "category": "mobile",
+      "date": "2024-7-9",
+      "image": "/images/1720510797579-poco.jpg"
+    },
+    {
+      "id": "333039040183839700",
+      "title": "Redmi 13c",
+      "price": "45000",
+      "description": "Bluetooth version is BT v5.1. It has AUX Function with Soft & Comfortable Cushions. The headband is Adjustable with Media/Volume control functionality,  Call Function, Built-in Rechargeable Battery, Voice assistant support. Type C charging",
+      "category": "mobile",
+      "date": "2024-7-9",
+      "image": "/images/1720510814046-redmi13c.jpg"
+    },
+    {
+      "id": "8845885604542786000",
+      "title": "Samsung S20",
+      "price": "170000",
+      "description": "Bluetooth version is BT v5.1. It has AUX Function with Soft & Comfortable Cushions. The headband is Adjustable with Media/Volume control functionality,  Call Function, Built-in Rechargeable Battery, Voice assistant support. Type C charging",
+      "category": "mobile",
+      "date": "2024-7-9",
+      "image": "/images/1720510837761-s20.jpg"
     }
   ]
 }
