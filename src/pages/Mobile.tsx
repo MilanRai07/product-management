@@ -4,12 +4,15 @@ import { product } from "../type/product";
 import { useRefetch } from "../customhook/useRefetch";
 import ReactPaginate from 'react-paginate';
 import { useState } from "react";
+import useFilterData from "../customhook/useFilterData";
 
 const ITEMS_PER_PAGE = 8;
-const Home = () => {
+const Mobile = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const { data, isLoading } = useGetProductsQuery();
-  const pageCount = Math.ceil((data?.length ?? 0) / ITEMS_PER_PAGE)
+  let mobileData = useFilterData(data ?? [], 'mobile');
+
+  const pageCount = Math.ceil((mobileData?.length ?? 0) / ITEMS_PER_PAGE)
   useRefetch();
 
   const handlePageClick = (selectedItem: { selected: number }) => {
@@ -17,7 +20,7 @@ const Home = () => {
   };
 
   const offset = currentPage * ITEMS_PER_PAGE;
-  const currentPageData = data?.slice(offset, offset + ITEMS_PER_PAGE);
+  const currentPageData = mobileData?.slice(offset, offset + ITEMS_PER_PAGE);
 
   return (
     <>
@@ -27,7 +30,7 @@ const Home = () => {
           isLoading ?
             <h1>Loading....</h1>
             :
-            <div className="Grid min-h-[347px]">
+            <div className="Grid min-h-[347px] ">
               {
                 currentPageData?.map((item: product) => {
                   const { id, title, price, description, image, category, date } = item;
@@ -67,4 +70,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Mobile

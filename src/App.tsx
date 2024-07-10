@@ -3,6 +3,9 @@ import NavBar from "./components/NavBar"
 import Home from "./pages/Home"
 import AddProduct from "./pages/AddProduct"
 import ManageProduct from "./pages/ManageProduct"
+import Mobile from "./pages/Mobile"
+import Laptop from "./pages/Laptop"
+import Others from "./pages/Others"
 
 function App() {
 
@@ -16,6 +19,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path='/add-products' element={<AddProduct />} />
             <Route path='/manage-products' element={<ManageProduct/>}/>
+            <Route path='/mobiles' element={<Mobile/>}/>
+            <Route path='/laptops' element={<Laptop/>}/>
+            <Route path='/others' element={<Others/>}/>
           </Routes>
         </div>
       </div>
