@@ -25,7 +25,7 @@ const Others = () => {
     return (
         <>
             <section>
-                <h1 className="PageHeader">Home</h1>
+                <h1 className="PageHeader">Others</h1>
                 {
                     isLoading ?
                         <h1>Loading....</h1>
