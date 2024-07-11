@@ -7,12 +7,12 @@ import Mobile from "./pages/Mobile"
 import Laptop from "./pages/Laptop"
 import Others from "./pages/Others"
 import Analytics from "./pages/Analytics"
+import SinglePage from "./pages/SinglePage"
 
 function App() {
 
   return (
     <HashRouter>
-
       <div className="flex">
         <NavBar />
         <div className="w-full p-12">
@@ -24,6 +24,7 @@ function App() {
             <Route path='/laptops' element={<Laptop />} />
             <Route path='/others' element={<Others />} />
             <Route path='/analytics' element={<Analytics />} />
+            <Route path='/singlepage/:key' element={<SinglePage />} />
           </Routes>
         </div>
       </div>
