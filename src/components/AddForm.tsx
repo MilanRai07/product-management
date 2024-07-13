@@ -47,7 +47,7 @@ const AddForm = () => {
       productData.append('image', values.image);
     }
     else {
-      productData.append('image', '/images/img.png')
+      productData.append('image', '/default.jpg')
     }
     setIsSubmitting(true)
     setTimeout(() => {
@@ -77,7 +77,7 @@ const AddForm = () => {
         <div className="flex gap-36">
           <div className="FlexBetween flex-col items-center">
             <div className="ImageContainer">
-              <img src={imagePreview ?? '/images/img.png'} className="h-full w-full object-fill"></img>
+              <img src={imagePreview ?? '/default.jpg'} className="h-full w-full object-fill"></img>
             </div>
             <label htmlFor="image" className="ImageLabel">Upload Image</label>
             <input type="file"
