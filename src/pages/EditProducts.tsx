@@ -41,7 +41,7 @@ const EditProducts = (props: any) => {
     if (values.image instanceof File) {
       productData.append('image', values.image);
     } else {
-      productData.append('image', values.image ?? '/default.jpg');
+      productData.append('image', values.image);
     }
 
     console.log(productData);
